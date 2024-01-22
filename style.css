@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 72px;
+    margin: 2rem 0 0 0 ;
+}
+
+img {
+    margin: 1rem;
+}
+
+h3 {
+    margin: 2rem 0 0 0 ;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: hsl(224, 41%, 42%);
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    padding: 0;
+    background-color: white;
+    filter: drop-shadow(6px 6px 2rem hsla(242, 43%, 64%, 0.548));
+    margin: 40rem 0;
+
+}
+
+.score {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 45%;
+    max-width: 48%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.score > p, .score-circle > p {
+    color: hsla(222, 100%, 96%, 0.53);
+    font-weight: normal;
+    margin: 1rem;
+}
+
+.score > p {
+    margin: 1rem 3rem;
+}
+
+.score-circle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.75rem;
+    padding: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 120px;
+    height: 120px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 40%;
+    max-width: 45%;
+    /* width: 100%; */
+    padding: 2rem;
+}
+
+.item, .item-right {
+    display: flex;
+}
+
+.item {
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 1rem 0 0 ;
+    margin: 0.5rem 0;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.06);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.06);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.06);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.06);
+}
+
+.item-left > p {
+    color: hsl(224, 30%, 27%);
+}
+
+span {
+    color: hsla(224, 30%, 27%, 0.533);
+}
+
+
+@media (max-width: 1000px) {
+    .card {
+        width: 80%;
+    }
+
+    .statistics {
+        min-width: 40%;
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .statistics, .score, button, .card {
+        /* min-width: 100% ; */
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+    .statistics {
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem 1rem 0;
+    }
+
+    
+
+    .item {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        width: 100%;
+    }
+    .statistics {
+        padding: 1rem 2rem;
+    }
+}
